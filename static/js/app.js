@@ -10,7 +10,11 @@ $(document).ready(function() {
 
     function submitEmail(event) {
         event.preventDefault();
-        // email info here!
+        var data = {
+            to: $('#submitForm input[nam="email"]').val(),
+            subject: $('#submitForm input[name="subject"]').val(),
+            text: $('#submitForm input[name="text"]').val()
+        }
     }
 
     // shows the submitted thing for a bit
